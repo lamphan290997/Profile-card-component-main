@@ -1,0 +1,109 @@
+/* reset CSS */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    background-color: hsl(185, 75%, 39%);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    text-align: center;
+}
+
+.bg-top, .bg-bottom {
+    position: absolute;
+    z-index: -1;
+}
+.bg-top {
+    bottom: 50%;
+    right: 50%;
+}
+.bg-bottom {
+    left: 50%;
+    top: 50%;
+}
+
+/* reset CSS */
+#card{
+    background-color: white;
+    margin: 25%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#banner{
+    background-image:url(images/bg-pattern-card.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120px;
+}
+
+.avatar {
+    border: 5px solid white;
+    border-radius: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    margin-top: -50px;
+}
+
+#card span{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+#card span h3{
+    color: hsl(229, 23%, 23%);
+    margin-right: 10px;
+    font-size: 18px;
+}
+#card span p{
+    color: hsl(227, 10%, 46%);
+    font-size: 18px;
+}
+
+.born {
+    color: hsl(227, 10%, 46%);
+    margin-bottom: 15px;
+}
+
+.follows{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: hsl(0, 0%, 59%) 1px solid;
+    margin-bottom: 15px;
+    padding-top: 15px;
+}
+
+.follows h3{
+    color: hsl(229, 23%, 23%);
+    font-size: 18px;
+}
+
+.follows p{
+    margin-top: 10px;
+    color: hsl(227, 10%, 46%);
+}
+
+/* Mobile */
+@media only screen and (min-device-width : 375px) and (max-device-width : 740px) {
+    #card{
+        margin: 130px 22px;    
+    }
+   
+    }
+/* Mobile */
